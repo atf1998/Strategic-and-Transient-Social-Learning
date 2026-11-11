@@ -1,7 +1,24 @@
+# Code and Data
+
 This repository contains all materials associated with the publication, including the dataset, PsychoPy task-design code, and analysis scripts.
 
-The Analysis Codes folder contains two Jupyter notebooks: Analysis and RL. All analyses reported in the publication are included in these files.
+## Analysis Codes
 
-The Task Design folder contains three task files and one image folder. The 2 Arm file corresponds to the two-armed task completed by all participants. The Baseline Task file corresponds to the fully individual task without social information; in the publication, participants in this group are referred to as the Solo group. The Main Task file corresponds to the social learning task used for the SoLI and SoLU groups.
+The `Analysis Codes` folder contains three Jupyter notebooks. All analyses reported in the publication are included in these files.
 
-Finally, the Data folder contains all data collected from participants in the SoLI, SoLU, and Solo groups.
+- **Analysis.ipynb** – Behavioral analyses, statistical comparisons, and visualization of the results.
+- **GLM.ipynb** – Mixed-effects analyses of choices, imitation, and confidence, including robustness checks.
+- **RL.ipynb** – Reinforcement learning model fitting, model comparisons, and validation analyses.
+
+## Task Design
+
+The `Task Design` folder contains three PsychoPy task files and an image folder.
+
+- **2arm.py** – The two-armed task completed by all participants.
+- **Base-line task.py** – The fully individual task without social information. Participants in this condition are referred to as the **Solo** group in the publication.
+- **main design.py** – The social learning task used for the **SoLI** and **SoLU** groups.
+- **Images/** – The images and instructions displayed during the tasks.
+
+## Data
+
+The `Data` folder contains participant-level CSV files from the **SoLI**, **SoLU**, and **Solo** groups. Each group has separate `2 arm` and `4 arm` folders containing the corresponding task data. The files record trial-by-trial choices, outcomes, confidence ratings, response times, and, where applicable, social information.
